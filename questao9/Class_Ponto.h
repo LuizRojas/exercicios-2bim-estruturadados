@@ -12,8 +12,8 @@ class Ponto{
         Ponto(int cx, int cy);
         int getX();
         int getY();
-        int setX(int cx);
-        int setY(int cy);
+        void setX(int cx);
+        void setY(int cy);
         // alterar a posição de um ponto, um método para obter a posição de um ponto. 
         void alteraPosicao(int cx, int cy);
 };
@@ -28,23 +28,23 @@ Ponto::Ponto(int cx, int cy){
     y = cy;
 }
 
-int getX::getX(){
+int Ponto::getX(){
     return x;
 }
 
-int getY::getY(){
+int Ponto::getY(){
     return y;
 }
 
-void setX::setX(int cx){
+void Ponto::setX(int cx){
     x = cx;
 }
 
-int setY::setY(int cx){
-    x = cx;
+void Ponto::setY(int cy){
+    y = cy;
 }
 
-void alteraPosicao::alteraPosicao(int cx, int cy){
+void Ponto::alteraPosicao(int cx, int cy){
     setX(cx);
     setY(cy);
 }

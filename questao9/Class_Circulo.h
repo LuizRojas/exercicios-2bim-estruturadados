@@ -25,10 +25,14 @@ Circulo::Circulo(float novo_raio){
     raio = novo_raio;
 }
 
-float getRaio::getRaio(){
+float Circulo::getRaio(){
     return raio;
 }
-void setRaio(float raio);
+void Circulo::setRaio(float novo_raio){
+    raio = novo_raio;
+}
 
-// método para obter a área do círculo.
-float areaCirculo();
+float Circulo::areaCirculo(){
+    int r = getRaio();
+    return 3.14 * (r * r);
+}
